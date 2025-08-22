@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*
+/**
  * 编写一个程序，生成以下输出：
  * Brazil, Russia, India, China
  * India, China,
@@ -9,7 +9,7 @@
  * 一个名为br()，调用一次打印一次"Brazil, Russia";
  * 另一个名为ic()，调用一次打印一次"India, China"。
  * 其他内容在main()函数中完成。
-*/
+ */
 
 // 函数前置声明
 void br();
