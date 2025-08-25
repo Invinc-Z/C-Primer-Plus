@@ -8,6 +8,9 @@
 #define TAX_RATE_3 0.25
 
 /**
+ * 修改第7章的编程练习8，用字符代替数字标记菜单的选项。用q代替5作为结束输入的标记。
+ *
+ * 第7章编程练习8如下：
  * 编写一个程序，提示用户输入一周工作的小时数，然后打印工资总额、税金和净收入。
  * 做如下假设：
  * a.基本工资 = 1000美元/小时
@@ -33,32 +36,33 @@ void show_list(double base_salary_hour);
 
 int main()
 {
-    int choice;
+    char choice;
     double base_salary_hour = 0.0;
     show_menu();
-    while (scanf("%d", &choice) == 1 && choice != 5)
+    while ((choice = getchar()) != 'q')
     {
         switch (choice) {
-        case 1:
+        case 'a':
             base_salary_hour = 8.75;
             show_list(base_salary_hour);
             break;
-        case 2:
+        case 'b':
             base_salary_hour = 9.33;
             show_list(base_salary_hour);
             break;
-        case 3:
+        case 'c':
             base_salary_hour = 10.00;
             show_list(base_salary_hour);
             break;
-        case 4:
+        case 'd':
             base_salary_hour = 11.20;
             show_list(base_salary_hour);
             break;
         default:
-            printf("Please enter number between 1 and 5: ");
+            printf("Please enter character between 1 and 5: ");
             break;
         }
+        while(getchar() != '\n');
         show_menu();
     }
     printf("bye\n");
@@ -69,9 +73,9 @@ void show_menu()
 {
     printf("******************************************************************\n\n");
     printf("Enter the number corresponding to the desired pay rate or action:\n");
-    printf("1) $8.75/hr                    2) $9.33/hr \n");
-    printf("3) $10.00/hr                   4) $11.20/hr \n");
-    printf("5) quit\n");
+    printf("a) $8.75/hr                    b) $9.33/hr \n");
+    printf("c) $10.00/hr                   d) $11.20/hr \n");
+    printf("q) quit\n");
     printf("******************************************************************\n\n");
 }
 
