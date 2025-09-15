@@ -8,4 +8,4 @@ C Primer Plus 第六版中文版习题答案
 
 如果您在阅读代码时发现有任何可以改进优化的地方，可以提出[Issues](https://github.com/Invinc-Z/C-Primer-Plus/issues)一起讨论，也可以发起[PR](https://github.com/Invinc-Z/C-Primer-Plus/pulls)提交您的代码。
 
-本答案在便写时部分题目参考了[C-Primer-Plus](https://github.com/zhayujie/C-Primer-Plus)。
+本答案在编写时部分题目参考了[C-Primer-Plus](https://github.com/zhayujie/C-Primer-Plus)，大家可以对照着查看题目的不同解法。
